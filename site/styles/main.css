@@ -19,9 +19,7 @@ body {
     color: #434545;
 }
 
-h1,
-h2,
-h3 {
+h1,h2,h3 {
     color: #1b8d76;
 }
 
@@ -39,7 +37,7 @@ header a:hover {
     border-top: 4px solid #a7a7a7;
 }
 
-::selection {
+::selection { 
     background-color: #cfc6c6;
     color: #000000;
 }
