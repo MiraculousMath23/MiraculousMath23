@@ -9,10 +9,26 @@
     <link rel="manifest" href="MiraculousMath23/site.webmanifest" />
     <link href="styles/normalize.css" rel="stylesheet" />
     <link href="styles/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Lab 1</title>
     <meta name="Author" content="MiraculousMath23">
     <meta name="description" content="All of my Favorite Things">
+    <style>
+        ul.useful-links {
+            padding: 0;
+        }
+        ul.useful-links li {
+            padding-left: 1em;
+            list-style-type: none;
+            background-image: url('link.png'); /* Path to the image */
+            background-size: 10px 10px; /* 6.3.4 - Background image size */
+            background-repeat: no-repeat; /* 6.3.5 - Prevent repeating */
+            background-position: left center; /* 6.3.6 - Position at left and vertically centered */
+        }
+    </style>
 </head>
 
 <body>
@@ -24,12 +40,13 @@
                     <li><a href="links.html">Links</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
                     <li><a href="survey.html">Survey</a></li>
+                    <li><a href="lorem.html">Lorem</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <h1>Useful Links</h1>
-            <ul>
+            <ul class="useful-links">
                 <li><a href="https://validator.w3.org/nu/">HTML Validator</a></li>
                 <li><a href="https://realfavicongenerator.net/">Favicon Generator</a></li>
             </ul>
@@ -45,7 +62,7 @@
             <p>&copy; 2025 <a href="mailto:ldubois0101@gmail.com?subject=Message%20from%20CSD112%20Website">Lily
                     DuBois</a></p>
         </footer>
-        <a href="◤">◤</a>
+        <a href="site/links.html" class="◤">◤</a>
     </div>
 </body>
 
