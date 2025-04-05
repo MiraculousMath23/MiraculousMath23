@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
 }
-
 .width-wrap {
     max-width: 960px;
     margin: 0 auto;
@@ -13,7 +12,6 @@ html {
     margin-bottom: 3em;
     background-color: #64e4d5;
 }
-
 body {
     background-color: #21ead6;
     color: #434545;
@@ -22,7 +20,6 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
 h1,
 h2,
 h3 {
@@ -34,7 +31,6 @@ h3 {
     font-variation-settings:
         "wdth" 100;
 }
-
 h4,
 h5,
 h6 {
@@ -45,53 +41,46 @@ h6 {
     font-variation-settings:
         "wdth" 100;
 }
-
 a {
     color: #b55ccd;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
 header a {
     color: #d76a0b;
     border-top: 4px solid transparent;
 }
-
 header a:hover {
     border-top: 4px solid #a7a7a7;
     text-decoration: none;
 }
-
 ::selection {
     background-color: #cfc6c6;
     color: #000000;
 }
-
 header {
     border-top: 4px solid rgba(0, 0, 0, 0.1);
     margin-left: -2em;
     margin-right: -2em;
 }
-
 header nav {
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     padding-left: 2em;
     padding-right: 2em;
 }
-
 header nav ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content:center;
 }
-
 header nav ul li {
-    display: inline;
+    display:block;
     list-style: none;
 }
-
 footer hr {
     width: clamp(300px, 50vw, 890px);
     margin-top: 3em;
@@ -99,144 +88,181 @@ footer hr {
     border: 0;
     border-bottom: 3px dotted #af5de9;
 }
-
 dt::after {
     content: ":";
 }
-
 th,
 td {
     padding: 0.3em 1em;
 }
-
 ol {
     list-style-type: upper-roman;
 }
-
 thead th,
 tfoot th,
 tbody th {
     background-color: rgba(0, 0, 0, 0.2);
 }
-
-
 td {
     background-color: rgba(0, 0, 0, 0.05);
 }
-
-
 tbody tr:nth-child(even) td {
     background-color: rgba(0, 0, 0, 0.15);
 }
-
 label {
     display: block;
 }
-
 ul.radio-list {
     padding: 0;
 }
-
 input[type="radio"]+label,
 input[type="checkbox"]+label {
     display: inline;
 }
-
-
 input[type="submit"] {
     border: none;
     padding: 1em 3em;
     background-color: #900aa1;
     color: rgb(252, 193, 255);
 }
-
 ul.radio-list li {
     list-style-type: none;
 }
-
 input:invalid,
 textarea:invalid,
 select:invalid {
     background-color: #ff8800;
 }
-
 iframe {
     border-top-right-radius: 2em;
     border-bottom-left-radius: 2em;
 }
-
 nav a {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-
 nav a:hover {
     text-decoration: none;
 }
-
 h1 {
     background: rgb(107, 11, 175);
     background: linear-gradient(90deg, rgba(107, 11, 175, 1) 0%, rgba(199, 4, 188, 1) 50%, rgba(0, 255, 201, 1) 100%);
 }
-
-/* 4.3 - 3-column layout for the 'bio' div */
 .bio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2em;
-    /* 4.4 - 2em gap between columns */
 }
 
-/* 4.5 - Make the courses table span all columns */
 .bio .courses {
     grid-column: span 3;
     margin-top: 1em;
-    /* 4.6 - 1em top margin */
     border-collapse: collapse;
-    /* 4.7 - Collapse table borders */
 }
-
-/* 4.8 - Put the caption below the table */
 .bio .courses caption {
     caption-side: bottom;
 }
-
-/* Handle potential overlap at smaller screen sizes */
 @media (max-width: 768px) {
     .bio {
         grid-template-columns: 1fr;
-        /* Change to a single column layout */
     }
 }
-
-/* 4.9 - Set a maximum width of 100% for all images */
+.favorites label + div {
+    display: none;
+    width: 100%; 
+}
+.favorites input[type="radio"]:checked + label + div {
+    display: block;
+}
+.favorites input[type="radio"] {
+    display: none;
+}
+.favorites {
+    display: flex;
+    flex-wrap: wrap; 
+}
+.favorites label {
+    order: -1;
+}
+.favorites label h3 {
+    font-family: Arial, sans-serif;
+    color: rgb(7, 154, 139);
+    cursor: pointer;
+    text-align: center;
+}
+.favorites input[type="radio"]:checked + label h3 {
+    color: rgb(200, 21, 200);
+    border-bottom: 3px solid rgb(176, 7, 176);
+}
+.favorites input[type="radio"]:hover + label h3 {
+    color: rgb(168, 62, 217);
+}
+.favorites div {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
 img {
     max-width: 100%;
     height: auto;
-    /* Ensure the aspect ratio is maintained */
 }
-
-/* 4.10 - Style the image of yourself */
 img.profile {
     padding: 2%;
-    /* 4.10.1 - 2% padding */
     background-color: white;
-    /* 4.10.2 - White background color */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    /* 4.10.3 - Example box shadow */
 }
-
 footer {
     font-size: 75%;
     text-align: center;
 }
-
 .◤ {
     text-shadow: #ff8800;
+    margin-left: -25px;
+    position: sticky;
+    bottom: 10px;
+    display: inline-block;
 }
-
 .◤:hover {
     text-decoration: none;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+}
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery .row-span-2 {
+    grid-row: span 2;
+}
+.gallery .col-span-2 {
+    grid-column: span 2;
+}
+.gallery a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+.paperclip {
+    background: none;
+    box-shadow: none;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bio a {
+    display: block;
+    position: relative;
+}
+  
