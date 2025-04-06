@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 1</title>
     <meta name="Author" content="MiraculousMath23">
     <meta name="description" content="All of my Favorite Things">
@@ -19,10 +20,13 @@
         href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap"
         rel="stylesheet">
     <style>
-        img {
-            margin: 1em;
+        @media (max-width: 768px) { 
+            img {
+                float: none;
+                display: block;
+                margin: 1em; 
+            }
         }
-
         footer {
             clear: both;
         }
@@ -33,6 +37,8 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon"></label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
