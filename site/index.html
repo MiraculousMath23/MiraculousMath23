@@ -1,11 +1,217 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <meta charset="UTF-8"> 
-       <title>Lab 1</title>
-       <meta name="Author" content="MiraculousMath23">
-    </head>
-    <body>
-        <p>MiraculousMath23</p>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <meta name="Author" content="MiraculousMath23">
+    <meta name="description" content="All of my Favorite Things">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="width-wrap">
+        <header id="top">
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon"></label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="links.html">Links</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                    <li><a href="lorem.html">Lorem</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Welcome to Lily's Website!</h1>
+            <div class="bio">
+                <a href="#">
+                    <img src="Images/Me-OG-150.JPG" sizes="(max-width:500px) 150px, 300px"
+                        srcset="Images/Me-OG-150.JPG 150px, Images/Me-OG-300.JPG 2x" alt="My Photo" class="profile"/>
+                    <img src="images/paperclip.png" alt="Paperclip" class="paperclip">
+                </a>
+                <br />
+                <p>
+                    Hi, My name is Lily, welcome to my Website. As I don't know what else to write I
+                    will leave you with song lyrics and quotes from my favorite shows/books/movies/songs.
+
+                </p>
+                <p>
+                    Take it from the top / when you're in over your head / take it from the top / push replay and start
+                    again
+                    / sometimes it might feel strange / the fact that we can change / you know / never stop ||
+                    I Didn't Want To Be A Halfblood. || Life is not a fairytale / but life unfolds in chapters / turn the
+                    page and start to make amends / theres no prewritten guarantee of happily ever afters / step into your
+                    greatness / before your story ends.
+                    || Don't be afraid to be who you are / Just scream out and shout and follow the stars / forget about the
+                    past that is over / we are the young ones our way is forward / who keeps tabs on stupid mistakes / we
+                    all mess up / but thats just the way / we learn how to get back up / we learn how to turn the page / so
+                    we will let our dreams take flight / and our hearts ignite / dont you know that its true / everything is
+                    possible / theres nothing we cant do / its a wild and beautiful fire / and i believe in you
+                </p>
+                <div id="Table 1: Current Courses">
+                    <table class="courses">
+                        <caption>Table 1. Current Courses</caption>
+                        <thead>
+                            <tr>
+                                <th rowspan="2" scope="rowgroup">Term</th>
+                                <th colspan="3" scope="colgroup" class="courses">Course</th>
+                            </tr>
+                            <tr>
+                                <th>Code</th>
+                                <th>Name</th>
+                                <th>Hrs/Week</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="5" scope="rowgroup">Fall</th>
+                                <td>CSD113</td>
+                                <td>Computing Env And Tool</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>MTH123</td>
+                                <td>Computer Math</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>CSD122</td>
+                                <td>Hardware/OS/Networks</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>CMM115</td>
+                                <td>Communications I</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>TNY130</td>
+                                <td>Technology/Society</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="6" scope="rowgroup">Winter</th>
+                                <td>CSD121</td>
+                                <td>Prog. Concepts I</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CSA103</td>
+                                <td>Business Applic. I</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CSD112</td>
+                                <td>Intro. To Web Dev.</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CSD124</td>
+                                <td>Sys. Analysis/Design</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>CSD123</td>
+                                <td>Databases I</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CSD125</td>
+                                <td>Emerging Technology</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="3">Total</th>
+                                <td>38</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <h2>My Favourite Things</h2>
+            <div class="favorites">
+                <input type="radio" name="favourite" id="show" checked>
+                <label for="show"><h3>TV Show</h3></label>
+                <div>
+                    <figure>
+                        <a href="https://austinally.fandom.com/wiki/Austin_%26_Ally_Wiki"><img src="Images/Logo.jpg"
+                                alt="austin+ally" />
+                        </a>
+                        <figcaption>Watch Austin And Ally On Disney</figcaption>
+                    </figure>
+                </div>
+                <input type="radio" name="favourite" id="char" >
+                <label for="char"><h3>Characters</h3></label>
+                <div>
+                    <ol>
+                        <li>Percy Jackson(PJO)</li>
+                        <li>Stitch(Disney)</li>
+                        <li>Ochako Uraraka(MHA)</li>
+                    </ol>
+                </div>
+                <input type="radio" name="favourite" id="poem" >
+                <label for="poem"><h3>Haiku</h3></label>
+                <div>
+                    <p>
+                        Scale of one to ten<br />How would you rate your demise?<br />Thanks for your input<br />
+                        <cite>by Apollo(Trials of Apollo)</cite>
+                    </p>
+                </div>
+                <input type="radio" name="favourite" id="story" >
+                <label for="story"><h3>Public Domain Audiobook</h3></label>
+                <div>
+                    <audio
+                        src="https://www.archive.org/download/aliceinwonderland_1102_librivox/aliceinwonderland_00_carroll_64kb.mp3"
+                        controls>
+                        <a
+                            href="https://www.archive.org/download/aliceinwonderland_1102_librivox/aliceinwonderland_1102_librivox_64kb_mp3.zip">download
+                            the book</a>
+                    </audio>
+                </div>
+                <input type="radio" name="favourite" id="video" >
+                <label for="video"><h3>YouTube Video</h3></label>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_N15ek-uTl0?si=ybKaZy_82wN8Igdz"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!----Found Me---->
+            <hr />
+            <blockquote>
+                "Bob Says Hello"
+                <cite>&mdash; <span class="Author">Percy Jackson & Annabeth Chase</span></cite>
+            </blockquote>
+            <p>&copy; 2025 <a href="mailto:ldubois0101@gmail.com?subject=Message%20from%20CSD112%20Website">Lily
+                    DuBois</a></p>
+            <picture>
+                <source type="image/svg+xml" srcset="sc-logo.svg" width="70" />
+            </picture>
+            <img src="sc-logo_105.png" width="105" srcset="sc-logo_105.png 1.5x, sc-logo_140.png 2x" alt="Logo" />
+
+        </footer>
+        <a href="#top" class="◤">◤</a>
+    </div>
+</body>
+
 </html>
